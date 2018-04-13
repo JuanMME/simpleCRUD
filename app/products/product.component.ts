@@ -17,7 +17,7 @@ export class ProductComponent implements OnInit {
     }
 
     getProducts() {
-        this.products = this._ProductService.getProductsFromService();
+        this.products = this._ProductService.getProductsFromData();
     }
 
 }
