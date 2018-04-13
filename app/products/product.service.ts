@@ -11,4 +11,9 @@ export class ProductService {
         return this.pItems;
     }
 
+    addProduct(product: Product) {
+        this.pItems.push(product);
+        console.log(this.pItems);
+    }
+
 }
