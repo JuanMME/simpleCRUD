@@ -9,6 +9,9 @@ import { ProductService } from './product.service';
 
 export class ProductComponent implements OnInit {
     products: Product[];
+    productForm: boolean = false;
+    isNewForm: boolean;
+    newProduct: any = {};
 
     constructor(private _ProductService: ProductService) {}
 
@@ -18,6 +21,16 @@ export class ProductComponent implements OnInit {
 
     getProducts() {
         this.products = this._ProductService.getProductsFromData();
+    }
+
+    showEditProductForm(product: Product) {
+        if (!product) {
+            this.productForm = false;
+            return;
+        }
+        this.productForm = true;
+        this.isNewForm = false;
+        this.newProduct = product;
     }
 
 }
