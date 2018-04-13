@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     moduleId: module.id,
-    templateUrl: 'home.template.html'
+    templateUrl: 'product.template.html'
 })
 
-export class HomeComponent {
+export class ProductComponent {
 
 }
