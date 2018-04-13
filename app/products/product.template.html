@@ -12,11 +12,12 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Product ID</td>
-          <td>Product Name</td>
-          <td>Product Description</td>
-          <td>Product Price</td>
+        <!--products is the property defined in the component-->
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.description }}</td>
+          <td>{{ product.price }}</td>
           <td>
             <button class="btn btn-info">
                          <i class="fa fa-edit"></i>
