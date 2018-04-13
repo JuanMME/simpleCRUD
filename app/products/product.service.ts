@@ -25,4 +25,10 @@ export class ProductService {
         });
         this.pItems[index] = product;
     }
+
+    deleteProduct(product: Product) {
+        this.pItems.splice(this.pItems.indexOf(product), 1);
+        console.log(this.pItems);
+    }
+
 }
